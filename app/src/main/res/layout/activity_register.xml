@@ -8,8 +8,8 @@
         android:layout_height="@dimen/dp_50"
         android:layout_above="@+id/et_Confirm"
         android:layout_marginBottom="@dimen/dp_14"
-        android:layout_marginLeft="@dimen/dp_55"
-        android:layout_marginRight="@dimen/dp_55"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
         android:hint="手机号" />
 
     <EditText
@@ -18,8 +18,8 @@
         android:layout_height="@dimen/dp_50"
         android:layout_above="@+id/btn_Register"
         android:layout_marginBottom="@dimen/dp_30"
-        android:layout_marginLeft="@dimen/dp_55"
-        android:layout_marginRight="@dimen/dp_55"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
         android:hint="密码"
         android:inputType="textPassword" />
     <Button
@@ -28,8 +28,8 @@
         android:layout_height="@dimen/dp_50"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/dp_200"
-        android:layout_marginLeft="@dimen/dp_50"
-        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
         android:background="@drawable/btn_float_normal"
         android:text="@string/register"
         android:textSize="@dimen/sp_16"
