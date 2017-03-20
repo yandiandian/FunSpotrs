@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.funspotrs.R;
+import com.example.funspotrs.activity.ForgetPasswordActivity;
 import com.example.funspotrs.activity.MainActivity;
 import com.example.funspotrs.activity.ResumeLoadActivity;
 import com.example.funspotrs.common.ActivityUtils;
@@ -49,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 activityUtils.startActivity(MainActivity.class);
                 break;
             case R.id.tv_word1:
-                activityUtils.startActivity(ResumeLoadActivity.class);
+                activityUtils.startActivity(ForgetPasswordActivity.class);
                 break;
             case R.id.tv_word2:
                 activityUtils.startActivity(RegisterActivity.class);

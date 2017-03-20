@@ -9,17 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".user.login.LoginActivity" />
-        <activity android:name=".user.register.RegisterActivity"></activity>
-        <activity android:name=".user.account.AccountActivity"></activity>
+        <activity android:name=".user.register.RegisterActivity" />
+        <activity android:name=".user.account.AccountActivity" />
         <activity android:name=".activity.FirstActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity"></activity>
-        <activity android:name=".activity.ResumeLoadActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ResumeLoadActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity">
+        </activity>
+        <activity android:name=".activity.ReceiveActivity"></activity>
     </application>
 
 </manifest>

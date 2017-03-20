@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.funspotrs.MainActivity">
+    tools:context="com.example.funspotrs.activity.MainActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toobar"
         android:layout_width="match_parent"
