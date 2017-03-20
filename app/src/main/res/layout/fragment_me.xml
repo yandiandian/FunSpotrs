@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
 
         <com.pkmmte.view.CircularImageView
             android:id="@+id/iv_user_head"
@@ -47,7 +48,7 @@
         android:text="个人动态"
         android:textColor="@color/text_goods_name"
         android:textSize="18sp"
-        android:layout_marginTop="6dp"/>
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/tv_person_goods"
@@ -60,5 +61,5 @@
         android:text="反馈意见"
         android:textColor="@color/text_goods_name"
         android:textSize="18sp"
-        android:layout_marginTop="6dp"/>
+        android:layout_marginTop="10dp"/>
 </LinearLayout>

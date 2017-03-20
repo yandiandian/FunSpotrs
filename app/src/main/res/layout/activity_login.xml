@@ -10,13 +10,13 @@
         android:layout_marginBottom="@dimen/dp_14"
         android:layout_marginLeft="@dimen/dp_55"
         android:layout_marginRight="@dimen/dp_55"
-        android:hint="手机号" />
+        android:hint="手机号"/>
 
     <EditText
         android:id="@+id/et_Confirm"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
-        android:layout_above="@+id/btn_Register"
+        android:layout_above="@+id/btn_login"
         android:layout_marginBottom="@dimen/dp_30"
         android:layout_marginLeft="@dimen/dp_55"
         android:layout_marginRight="@dimen/dp_55"
@@ -27,24 +27,33 @@
         android:id="@+id/btn_login"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_60"
+        android:layout_height="@dimen/dp_50"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/dp_200"
         android:layout_marginLeft="@dimen/dp_50"
         android:layout_marginRight="@dimen/dp_50"
-        android:background="#ff5809"
-        android:text="@string/login"
-        android:textSize="@dimen/sp_16" />
+        android:background="@drawable/btn_float_normal"
+        android:text="登录"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"/>
     <TextView
-        android:id="@+id/tv_word"
+        android:id="@+id/tv_word1"
         android:layout_above="@+id/iv_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:layout_marginLeft="@dimen/dp_50"
-        android:layout_marginRight="@dimen/dp_50"
-        android:text="已有趣运动账号？去登录"/>
-
+        android:layout_marginBottom="110dp"
+        android:text="忘记密码？"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_word2"
+        android:layout_above="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="没有趣运动账号？去注册"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp" />
     <ImageView
         android:id="@+id/iv_line"
         android:layout_width="match_parent"

@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.funspotrs.R;
+import com.example.funspotrs.common.ActivityUtils;
+import com.example.funspotrs.user.login.LoginActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,12 +28,13 @@ public class RegisterActivity extends AppCompatActivity {
     TextView tvWord;
     @BindView(R.id.iv_line)
     ImageView ivLine;
-
+private ActivityUtils activityUtils;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
+        activityUtils=new ActivityUtils(this);
     }
 
     @OnClick({R.id.btn_Register, R.id.tv_word})
@@ -40,6 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
             case R.id.btn_Register:
                 break;
             case R.id.tv_word:
+               activityUtils.startActivity(LoginActivity.class);
                 break;
         }
     }
