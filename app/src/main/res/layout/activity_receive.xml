@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/receive_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/acty_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="请输入短信验证码"
+            android:textColor="@color/black"
+
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_ra_wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receive_toobar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="短信验证已发送请注意查收"
+        android:textSize="16sp" />
+<LinearLayout
+    android:id="@+id/act_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_ra_wd"
+    android:layout_marginTop="10dp">
+    <EditText
+        android:id="@+id/et_fn1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/et_fn2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/et_fn3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/et_fn4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/et_fn5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/et_fn6"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/act_ll"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_float_normal"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+</RelativeLayout>
