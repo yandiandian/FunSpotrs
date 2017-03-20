@@ -4,19 +4,16 @@
     android:layout_height="match_parent">
     <EditText
         android:id="@+id/et_Password"
-        style="@style/AppTheme.EditText.Big"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
         android:layout_above="@+id/et_Confirm"
         android:layout_marginBottom="@dimen/dp_14"
         android:layout_marginLeft="@dimen/dp_55"
         android:layout_marginRight="@dimen/dp_55"
-        android:hint="手机号"
-        android:inputType="textPassword" />
+        android:hint="手机号" />
 
     <EditText
         android:id="@+id/et_Confirm"
-        style="@style/AppTheme.EditText.Big"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
         android:layout_above="@+id/btn_Register"

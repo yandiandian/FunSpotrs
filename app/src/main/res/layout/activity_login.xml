@@ -4,19 +4,16 @@
     android:layout_height="match_parent">
     <EditText
         android:id="@+id/et_Password"
-        style="@style/AppTheme.EditText.Big"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
         android:layout_above="@+id/et_Confirm"
         android:layout_marginBottom="@dimen/dp_14"
         android:layout_marginLeft="@dimen/dp_55"
         android:layout_marginRight="@dimen/dp_55"
-        android:hint="手机号"
-        android:inputType="textPassword" />
+        android:hint="手机号" />
 
     <EditText
         android:id="@+id/et_Confirm"
-        style="@style/AppTheme.EditText.Big"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
         android:layout_above="@+id/btn_Register"
@@ -27,7 +24,7 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btn_Register"
+        android:id="@+id/btn_login"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_60"
@@ -39,24 +36,14 @@
         android:text="@string/login"
         android:textSize="@dimen/sp_16" />
     <TextView
-        android:id="@+id/tv_word1"
-        android:layout_above="@+id/iv_line"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
-        android:layout_marginLeft="@dimen/dp_50"
-        android:layout_marginRight="@dimen/dp_50"
-        android:text="忘记密码？"/>
-    <TextView
-        android:id="@+id/tv_word2"
+        android:id="@+id/tv_word"
         android:layout_above="@+id/iv_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:layout_marginLeft="@dimen/dp_50"
         android:layout_marginRight="@dimen/dp_50"
-        android:text="没有趣运动账号？去注册"
-        android:textSize="16sp"/>
+        android:text="已有趣运动账号？去登录"/>
 
     <ImageView
         android:id="@+id/iv_line"
