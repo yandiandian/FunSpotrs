@@ -1,6 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_page"
@@ -8,12 +6,16 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
         android:background="@color/white"
         android:orientation="vertical">
-
-        <com.pkmmte.view.CircularImageView
+<ImageView
+    android:id="@+id/iv_user_head"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@mipmap/user_icon" />
+       <!-- <com.pkmmte.view.CircularImageView
             android:id="@+id/iv_user_head"
             android:layout_width="120dp"
             android:layout_height="120dp"
@@ -26,26 +28,15 @@
             app:selector_color="#4D000000"
             app:selector_stroke_color="#16f5f5f5"
             app:selector_stroke_width="6dp"
-            app:shadow="false" />
+            app:shadow="false" />-->
 
         <TextView
             android:id="@+id/tv_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="30dp"
             android:text="昵称"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/tv_invitenb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_username"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="10dp"
-            android:text="我的邀请码："
             android:textColor="@color/black"
             android:textSize="16sp" />
     </RelativeLayout>
@@ -53,8 +44,8 @@
     <TextView
         android:id="@+id/tv_person_info"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
         android:background="@color/white"
         android:gravity="center|start"
         android:paddingLeft="20dp"
@@ -63,11 +54,15 @@
         android:textColor="@color/text_goods_name"
         android:textSize="18sp" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line" />
     <TextView
         android:id="@+id/tv_person_goods"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
         android:background="@color/white"
         android:gravity="center|start"
         android:paddingLeft="20dp"

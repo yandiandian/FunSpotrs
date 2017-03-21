@@ -11,8 +11,18 @@
         android:layout_marginLeft="@dimen/dp_30"
         android:layout_marginRight="@dimen/dp_30"
         android:hint="请输入新密码"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textCursorDrawable="@null"/>
 
+    <View
+        android:id="@+id/v_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="#000000" />
     <EditText
         android:id="@+id/et_anp"
         android:layout_width="match_parent"
@@ -22,8 +32,18 @@
         android:layout_marginLeft="@dimen/dp_30"
         android:layout_marginRight="@dimen/dp_30"
         android:hint="再次输入新密码"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textCursorDrawable="@null"/>
 
+    <View
+        android:id="@+id/v_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="#000000" />
     <Button
         android:id="@+id/btn_sure"
         android:layout_width="match_parent"

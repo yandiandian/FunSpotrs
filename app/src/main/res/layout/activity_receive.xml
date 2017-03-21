@@ -44,37 +44,43 @@
             android:id="@+id/et_fn1"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textCursorDrawable="@null" />
 
         <EditText
             android:id="@+id/et_fn2"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textCursorDrawable="@null" />
 
         <EditText
             android:id="@+id/et_fn3"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textCursorDrawable="@null" />
 
         <EditText
             android:id="@+id/et_fn4"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textCursorDrawable="@null" />
 
         <EditText
             android:id="@+id/et_fn5"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textCursorDrawable="@null" />
 
         <EditText
             android:id="@+id/et_fn6"
             android:layout_width="0dp"
             android:layout_height="@dimen/dp_50"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textCursorDrawable="@null" />
     </LinearLayout>
 
     <Button
