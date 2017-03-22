@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/tx"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nc"
+            android:layout_marginTop="5dp"
+            android:text="伤疤是亲手佩戴的骄傲勋章，你一无所有的闯荡....." />
+
+        <com.hmy.ninegridlayout.view.NineGridTestLayout
+            android:id="@+id/layout_nine_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pl"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_nine_grid"
+            android:layout_marginTop="8dp"
+            android:text="10分钟前" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_nine_grid"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/gd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/sg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_toRightOf="@+id/gd"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
