@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stu_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/im" />
+
+        <TextView
+            android:id="@+id/tv_acount_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/stu_image"
+            android:text="战斗有氧运动"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_acount_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acount_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/stu_image"
+            android:text="塑性"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_acount_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acount_1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_acount_2"
+            android:text="减脂"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_acount_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acount_1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_acount_3"
+            android:text="增肌"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_acount_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acount_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/stu_image"
+            android:text="今天 "
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_acount_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acount_2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_acount_5"
+            android:text=" 12:10-12:30 "
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_acount_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acount_2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_acount_6"
+            android:text=" 一号场地"
+            android:textSize="@dimen/sp_12" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_acount_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_acount_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_acount_8"
+                android:text="/"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_acount_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:layout_toRightOf="@+id/tv_acount_9"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
