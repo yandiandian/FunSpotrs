@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new CircleFragment();
-                case 1:
                     return new CourseFragment();
+                case 1:
+                    return new CircleFragment();
 
                 case 2:
                     return new MeFragment();

@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="12dp"
             android:layout_toRightOf="@+id/stu_image"
             android:text="战斗有氧运动"
             android:textSize="@dimen/sp_16" />

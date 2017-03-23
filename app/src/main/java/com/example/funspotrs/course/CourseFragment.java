@@ -11,6 +11,9 @@ import android.widget.ListView;
 import com.example.funspotrs.R;
 import com.example.funspotrs.adapter.CourseAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -20,15 +23,39 @@ import butterknife.ButterKnife;
 public class CourseFragment extends Fragment {
     @BindView(R.id.list_view)
     ListView listView;
+    private List<Courses> list = new ArrayList<Courses>();
     private CourseAdapter adapter;
+    int imgs[] = {R.drawable.im};
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_course, container, false);
         ButterKnife.bind(this, view);
+        getData();
+        adapter = new CourseAdapter(getContext(),list);
         listView.setAdapter(adapter);
+
         return view;
+
 
     }
 
+    public void getData() {
+        for (int i = 0; i < imgs.length; i++) {
+            Courses c = new Courses();
+            c.setImageid(imgs[i]);
+            c.setName("战斗有氧运动");
+            c.setType1("塑性");
+            c.setType2("减脂");
+            c.setType3("增肌");
+            c.setData("今天");
+            c.setTm("12:10-12:30");
+            c.setLa("一号场地");
+            c.setN1(1);
+            c.setN2(12);
+            list.add(c);
+        }
+
+    }
 }
