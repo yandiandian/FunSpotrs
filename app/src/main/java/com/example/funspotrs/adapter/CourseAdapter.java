@@ -60,15 +60,15 @@ public class CourseAdapter extends BaseAdapter {
             convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();
-
+            holder.headIcon.setImageResource(list.get(position).getImageid());
+            holder.Text_a.setText(list.get(position).getName());
+            holder.Text_b.setText(list.get(position).getType1());
+            holder.Text_c.setText(list.get(position).getData());
+            holder.Text_d.setText(list.get(position).getLa());
+            holder.Text_e.setText(list.get(position).getN1()+"");
+            holder.Text_f.setText(list.get(position).getN2()+"");
         }
-        holder.headIcon.setImageResource(list.get(position).getImageid());
-        holder.Text_a.setText(list.get(position).getName());
-        holder.Text_b.setText(list.get(position).getType1());
-        holder.Text_c.setText(list.get(position).getData());
-        holder.Text_d.setText(list.get(position).getLa());
-        holder.Text_e.setText(list.get(position).getN1()+"");
-        holder.Text_f.setText(list.get(position).getN2()+"");
+
         return convertView;
     }
 
