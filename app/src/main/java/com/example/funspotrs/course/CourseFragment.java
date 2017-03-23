@@ -25,7 +25,7 @@ public class CourseFragment extends Fragment {
     ListView listView;
     private List<Courses> list = new ArrayList<Courses>();
     private CourseAdapter adapter;
-    int imgs[] = {R.drawable.im};
+    int imgs[] = {R.drawable.im,R.drawable.ich,R.drawable.im};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,10 +35,7 @@ public class CourseFragment extends Fragment {
         getData();
         adapter = new CourseAdapter(getContext(),list);
         listView.setAdapter(adapter);
-
         return view;
-
-
     }
 
     public void getData() {
@@ -46,11 +43,8 @@ public class CourseFragment extends Fragment {
             Courses c = new Courses();
             c.setImageid(imgs[i]);
             c.setName("战斗有氧运动");
-            c.setType1("塑性");
-            c.setType2("减脂");
-            c.setType3("增肌");
-            c.setData("今天");
-            c.setTm("12:10-12:30");
+            c.setType1("塑性 减脂 增肌");
+            c.setData("今天 12:10-12:30");
             c.setLa("一号场地");
             c.setN1(1);
             c.setN2(12);

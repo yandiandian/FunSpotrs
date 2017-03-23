@@ -4,7 +4,25 @@
     android:layout_height="match_parent"
     android:background="@color/bg_page"
     android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:background="#f9490f"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+        <TextView
+            android:id="@+id/acty_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="体侧数据"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

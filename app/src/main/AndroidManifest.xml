@@ -22,14 +22,13 @@
         </activity>
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ResumeLoadActivity" />
-        <activity android:name=".activity.ForgetPasswordActivity"></activity>
+        <activity android:name=".activity.ForgetPasswordActivity" />
         <activity android:name=".activity.ReceiveActivity" />
-        <activity android:name=".course.CourseActivity"></activity>
+        <activity android:name=".course.CourseActivity" />
 
-        <!-- 这是测试-->
-        <activity android:name=".TestNine">
-
-        </activity>
+        <!-- 这是测试 -->
+        <activity android:name=".TestNine"></activity>
+        <activity android:name=".activity.AnthropometricDataActivity"></activity>
     </application>
 
 </manifest>

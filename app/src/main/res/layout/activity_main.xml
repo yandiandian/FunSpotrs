@@ -5,26 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.funspotrs.activity.MainActivity">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/main_toobar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="15dp"
-        android:background="#ff5809"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <TextView
-           android:id="@+id/acty_tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:text="课程"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-    </android.support.v7.widget.Toolbar>
-
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"

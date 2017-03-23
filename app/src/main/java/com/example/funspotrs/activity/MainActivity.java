@@ -22,15 +22,10 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    @BindView(R.id.main_toobar)
-    Toolbar mainToobar;
     @BindView(R.id.viewpager)
     ViewPager viewpager;
     @BindViews({R.id.tv_acount, R.id.tv_circle, R.id.tv_me})
     TextView[] textViews;
-    @BindView(R.id.acty_tv_title)
-    TextView actyTvTitle;
     //点击2次返回，退出程序
     private boolean isExit = false;
     private ActivityUtils activityUtils;
@@ -48,26 +43,6 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         viewpager.setAdapter(adapter);
         textViews[1].setSelected(true);
-        viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                for (TextView textView : textViews) {
-                    textView.setSelected(false);
-                    actyTvTitle.setText(textViews[position].getText());
-                    textViews[position].setSelected(true);
-                }
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
     }
 
     private FragmentStatePagerAdapter adapter = new FragmentStatePagerAdapter(getSupportFragmentManager()) {
@@ -103,8 +78,6 @@ public class MainActivity extends AppCompatActivity {
         view.setSelected(true);
         //参数false代表瞬间切换，而不是平滑过渡
         viewpager.setCurrentItem((Integer) view.getTag(), false);
-        //设置一下toolbar的title
-        actyTvTitle.setText(textViews[(Integer) view.getTag()].getText());
     }
 
     @Override
