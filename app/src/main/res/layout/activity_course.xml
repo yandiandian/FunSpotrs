@@ -5,4 +5,198 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.funspotrs.user.account.AccountActivity">
+
+    <ImageView
+        android:id="@+id/cr_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ich" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/cr_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/cr_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="战斗有氧运动"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/cr_rl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cr_iv">
+
+        <TextView
+            android:id="@+id/cr_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="评分"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/cr_iv_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/cr_tv_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/xx1" />
+
+        <ImageView
+            android:id="@+id/cr_iv_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/cr_tv_1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_iv_1"
+            android:background="@drawable/xx1" />
+
+        <ImageView
+            android:id="@+id/cr_iv_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/cr_tv_1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_iv_2"
+            android:background="@drawable/xx1" />
+
+        <ImageView
+            android:id="@+id/cr_iv_4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/cr_tv_1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_iv_3"
+            android:background="@drawable/xx1" />
+
+        <ImageView
+            android:id="@+id/cr_iv_5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/cr_tv_1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_iv_4"
+            android:background="@drawable/xx1" />
+
+        <ImageView
+            android:id="@+id/cr_im"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@+id/cr_iv_5"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/divider_line" />
+
+        <TextView
+            android:id="@+id/cr_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cr_im"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="2017.2.23 15:30-16:30"
+            android:textSize="14sp" />
+        android:layout_below="@+id/cr_iv_5"/>
+
+        <TextView
+            android:id="@+id/cr_tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cr_tv_2"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="印象汇店维多利亚教室"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cr_tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cr_tv_2"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_tv_3"
+            android:text="已约人数 "
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/cr_tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cr_tv_2"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_tv_4"
+            android:text="23"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/cr_tv_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cr_tv_2"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_tv_5"
+            android:text="/"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/cr_tv_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cr_tv_2"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cr_tv_6"
+            android:text="24"
+            android:textSize="14sp" />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cr_rl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/cr_rl"
+    android:layout_marginTop="3dp">
+
+    <TextView
+        android:id="@+id/cr_tv_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="学员信息"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/cr_im1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/cr_tv_8"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/divider_line" />
+    <ListView
+        android:id="@+id/cr_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cr_im1"
+        ></ListView>
+</RelativeLayout>
+
 </RelativeLayout>

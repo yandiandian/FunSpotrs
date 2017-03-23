@@ -1,4 +1,4 @@
-package com.example.funspotrs.course;
+package com.example.funspotrs.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,12 +6,12 @@ import android.view.WindowManager;
 
 import com.example.funspotrs.R;
 
-public class CourseActivity extends Activity {
+public class PublishActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        setContentView(R.layout.activity_course);
+        setContentView(R.layout.activity_publish);
     }
 }
