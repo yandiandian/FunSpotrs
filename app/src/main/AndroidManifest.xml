@@ -27,7 +27,6 @@
         <activity android:name=".course.CourseActivity" />
 
         <!-- 这是测试 -->
-        <activity android:name=".TestNine" />
         <activity android:name=".activity.AnthropometricDataActivity" />
         <activity android:name=".activity.PersonalDataActivity" />
         <activity android:name=".activity.PublishActivity"></activity>

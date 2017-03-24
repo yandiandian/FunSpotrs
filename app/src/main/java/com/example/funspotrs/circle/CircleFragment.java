@@ -32,19 +32,18 @@ public class CircleFragment extends Fragment {
     Toolbar mainToobar;
     @BindView(R.id.lv_circle)
     ListView lvCircle;
-private ActivityUtils activityUtils;
+    private ActivityUtils activityUtils;
+
     public CircleFragment() {
-        // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_circle, container, false);
         ButterKnife.bind(this, view);
-        activityUtils=new ActivityUtils(this);
+        activityUtils = new ActivityUtils(this);
         return view;
     }
 
