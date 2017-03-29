@@ -3,6 +3,7 @@ package com.example.funspotrs.user.register;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -26,12 +27,11 @@ public class RegisterActivity extends AppCompatActivity {
     Button btnRegister;
     @BindView(R.id.tv_word)
     TextView tvWord;
-    @BindView(R.id.iv_line)
-    ImageView ivLine;
 private ActivityUtils activityUtils;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
         activityUtils=new ActivityUtils(this);

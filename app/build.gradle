@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.example.funspotrs"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -35,6 +35,7 @@ dependencies {
     compile 'org.hybridsquad.android.photocropper:library:2.1.0'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'in.srain.cube:ultra-ptr:1.0.11'
@@ -45,4 +46,12 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    // xRecyclerView
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    // facebook 图片
+    compile 'com.facebook.fresco:fresco:0.12.0', {
+        exclude module: 'support-v4'
+        exclude group: 'com.nineoldandroids'
+    }
+
 }

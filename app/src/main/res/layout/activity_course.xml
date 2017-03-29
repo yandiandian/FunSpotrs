@@ -55,7 +55,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/xx1" />
+            android:background="@drawable/selector_ic_star" />
 
         <ImageView
             android:id="@+id/cr_iv_2"
@@ -65,7 +65,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/cr_iv_1"
-            android:background="@drawable/xx1" />
+            android:background="@drawable/selector_ic_star" />
 
         <ImageView
             android:id="@+id/cr_iv_3"
@@ -75,7 +75,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/cr_iv_2"
-            android:background="@drawable/xx1" />
+            android:background="@drawable/selector_ic_star" />
 
         <ImageView
             android:id="@+id/cr_iv_4"
@@ -85,7 +85,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/cr_iv_3"
-            android:background="@drawable/xx1" />
+            android:background="@drawable/selector_ic_star" />
 
         <ImageView
             android:id="@+id/cr_iv_5"
@@ -95,7 +95,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/cr_iv_4"
-            android:background="@drawable/xx1" />
+            android:background="@drawable/selector_ic_star" />
 
         <ImageView
             android:id="@+id/cr_im"

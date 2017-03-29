@@ -17,7 +17,6 @@
         <Space
             android:layout_width="16dp"
             android:layout_height="match_parent"/>
-        <!--使用的Widget.AppCompat.Button主题，解决选择器问题-->
         <Button
             android:id="@+id/btn_Register"
             android:layout_width="0px"
@@ -30,8 +29,6 @@
         <Space
             android:layout_width="16dp"
             android:layout_height="match_parent"/>
-
-        <!--使用的Widget.AppCompat.Button主题，解决选择器问题-->
         <Button
             android:id="@+id/btn_Login"
             android:layout_width="0px"

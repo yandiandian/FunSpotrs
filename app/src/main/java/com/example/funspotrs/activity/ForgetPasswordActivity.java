@@ -2,6 +2,7 @@ package com.example.funspotrs.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.funspotrs.R;
@@ -19,6 +20,7 @@ private ActivityUtils activityUtils;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         setContentView(R.layout.activity_forget_password);
         ButterKnife.bind(this);
         activityUtils=new ActivityUtils(this);

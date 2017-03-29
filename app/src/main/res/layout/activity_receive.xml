@@ -9,16 +9,20 @@
         android:layout_height="50dp"
         android:background="#ffffff">
 
+        <ImageView
+            android:id="@+id/act_rc_tb_im"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_ic_back"/>
+
         <TextView
             android:id="@+id/acty_tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="13dp"
             android:text="请输入短信验证码"
-            android:textColor="@color/black"
-
-            android:textSize="20sp" />
+            android:textColor="#00172a"
+            android:textSize="18sp" />
     </android.support.v7.widget.Toolbar>
 
     <TextView
@@ -29,6 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="短信验证已发送请注意查收"
+        android:textColor="#dadada"
         android:textSize="16sp" />
 
     <LinearLayout
@@ -36,8 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_ra_wd"
-        android:layout_marginLeft="@dimen/dp_30"
-        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
         android:layout_marginTop="10dp">
 
         <EditText
@@ -88,11 +93,22 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
         android:layout_below="@+id/act_ll"
-        android:layout_marginLeft="@dimen/dp_30"
-        android:layout_marginRight="@dimen/dp_30"
-        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="55dp"
         android:background="@drawable/btn_float_normal"
         android:text="完成"
         android:textColor="@color/white"
-        android:textSize="@dimen/sp_16" />
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/act_rc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_sure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="56秒后 重新发送验证码"
+        android:textColor="#979797"
+        android:textSize="18sp" />
 </RelativeLayout>

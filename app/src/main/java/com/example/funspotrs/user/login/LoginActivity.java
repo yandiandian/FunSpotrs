@@ -3,15 +3,13 @@ package com.example.funspotrs.user.login;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.funspotrs.R;
 import com.example.funspotrs.activity.ForgetPasswordActivity;
 import com.example.funspotrs.activity.MainActivity;
-import com.example.funspotrs.activity.ResumeLoadActivity;
 import com.example.funspotrs.common.ActivityUtils;
 import com.example.funspotrs.user.register.RegisterActivity;
 
@@ -25,19 +23,20 @@ public class LoginActivity extends AppCompatActivity {
     EditText etPassword;
     @BindView(R.id.et_Confirm)
     EditText etConfirm;
-    @BindView(R.id.btn_login)
-    Button btnLogin;
+    /*  @BindView(R.id.btn_login)
+      Button btnLogin;*/
     @BindView(R.id.tv_word1)
     TextView tvWord1;
     @BindView(R.id.tv_word2)
     TextView tvWord2;
-    @BindView(R.id.iv_line)
-    ImageView ivLine;
+    @BindView(R.id.btn_login)
+    TextView btnLogin;
     private ActivityUtils activityUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         activityUtils = new ActivityUtils(this);
